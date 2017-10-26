@@ -1,0 +1,15 @@
+﻿<Window x:Class="Gzlr.Framework.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gzlr.Framework"
+        DataContext="{Binding Path=MainViewModel, Source={StaticResource ViewModelLocator}}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBlock Text="{Binding Name}"></TextBlock>
+        
+        <Button Command="{Binding Command}" Height="100" Width="100">Push me</Button>
+    </Grid>
+</Window>
